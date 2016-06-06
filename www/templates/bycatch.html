@@ -1,0 +1,13 @@
+<div class="home">
+<ion-view title="Home" hide-back-button="true" id="page3" style="background-color:;">
+    <ion-content padding="false" class="has-header">
+        <a class="button button-calm  button-block icon ion-android-camera buttontrans" ng-click="takePicture()"> Take Photo</a>
+        <img ng-show="imgURI !== undefined" ng-src="{{imgURI}}">
+        
+            <img ng-show="imgURI === undefined" ng-src="img/empty.png">
+
+        <a id="visselDetails-button16" class="button button-calm  button-block icon ion-android-done-all buttontrans" ng-click="submitByCatch()"> Save</a>
+        
+    </ion-content>
+</ion-view>
+</div>
